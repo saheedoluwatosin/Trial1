@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">ArticleHub</div>
+        <ul class="nav-links">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="upload.html">Upload</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search articles..." onkeyup="searchArticles()">
+    </div>
+
+    <!-- Article Section -->
+    <section id="articles-container">
+        <h1>All Articles</h1>
+        <div id="articles" class="article-list">
+            <!-- Articles will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>

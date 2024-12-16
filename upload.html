@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Article</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">My Articles</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="upload.html">Upload</a></li>
+        </ul>
+    </nav>
+
+    <div class="upload-container">
+        <h2>Upload New Article</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="input-field">
+                <input type="text" id="title" placeholder="Article Title" required />
+            </div>
+
+            <div id="stepsContainer">
+                <div class="step input-field">
+                    <input type="text" name="stepText" placeholder="Step text" required />
+                    <input type="file" name="stepImage" />
+                </div>
+            </div>
+
+            <button type="button" id="addStepBtn" class="add-btn">Add Step</button>
+            <button type="submit" class="submit-btn">Upload Article</button>
+        </form>
+    </div>
+
+    <script src="upload.js"></script>
+</body>
+</html>
+
